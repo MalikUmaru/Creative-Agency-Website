@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+}
+
+.logo {
+  position: fixed;
+  background-color: black;
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.logo h1 {
+  color: white;
+}
+
+#nav-bar {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+#nav-bar ul {
+  float: right;
+  display: flex;
+  padding: 0 50px;
+}
+
+#nav-bar ul li {
+  display: block;
+  padding: 5px;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  margin-right: 15px;
+}
+
+.image-display img {
+  width: 100%;
+}
+
+.contents {
+  width: 100%;
+  padding: 30px;
+}
+.contents h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contents p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.foot {
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.foot span {
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+/* SERVICE PAGE */
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  grid-auto-rows: minmax(100px, auto);
+  padding: 20px;
+}
+
+.grid {
+  background-color: yellow;
+  padding: 10px;
+  text-align: justify;
+}
+
+.grid:hover {
+  box-shadow: 0px 1px 19px 13px #000000;
+  cursor: pointer;
+}
+
+.grid h2 {
+  text-align: center;
+}
+
+.grid img {
+  width: 100%;
+}
+.contact-form {
+  width: 50%;
+  margin-left: 25%;
+}
+
+.form-form {
+  padding: 30px;
+}
+
+.input-1,
+.input-2,
+.input-3,
+.input-4,
+.input-5,
+.submit-btn {
+  display: block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 1px;
+  width: 95%;
+}
+
+.submit-btn {
+  cursor: pointer;
+}
+
+.contact-info {
+  background-color: darkgrey;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-address,
+.info-email,
+.info-call {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.info-address p,
+.info-email p,
+.info-call p {
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    grid-auto-rows: minmax(100px, auto);
+    padding: 20px;
+  }
+
+  .info-address,
+  .info-email,
+  .info-call {
+    display: block;
+    margin-left: 30px;
+  }
+}
